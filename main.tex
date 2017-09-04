@@ -256,7 +256,7 @@
   %sensitive=f,%
   %morestring=[b]",%
   %morestring=[b]',%
-  %morecomment=[l];%  
+  %morecomment=[l];%
   %showstringspaces=false,
   %backgroundcolor=\color{bg},
   %keywordstyle=\color{col3},
@@ -276,12 +276,12 @@
   %sensitive=f,%
   %morestring=[b]",%
   %morestring=[b]',%
-  %morecomment=[l];%  
+  %morecomment=[l];%
   %showstringspaces=false,
   %backgroundcolor=\color{bg},
   %keywordstyle=\color{col3},
   %commentstyle=\color{col2},
-  %identifierstyle=\color{black}, 
+  %identifierstyle=\color{black},
   %stringstyle=\color{col1},
 }
 
@@ -312,9 +312,14 @@
 
 \frontmatter
 
+% I'm suggesting putting \include{praise.tex} here - Renaissance
+
+% Suggested taking out 1st_page, putting the information in different places -Ren
 \RU{\include{1st_page_RU}}
 \EN{\include{1st_page_EN}}
 %\DE{\include{1st_page_DE}}\RU{\include{1st_page_RU}}\CN{\include{1st_page_CN}}
+
+
 \include{page_after_cover}
 \include{call_for_translators}
 
@@ -333,13 +338,19 @@
 \tableofcontents
 \cleardoublepage
 
+% \include{page_after_cover} - as per suggestion above - Ren.
+
 \cleardoublepage
 \include{preface}
 
 \mainmatter
 
 \include{parts}
+% I'm not sure how to exclude reverse_engineering_services, but I think it's \exclude{reverse_engineering_services} - Ren
 
+%Should there be a \backmatter here?
+% If the opinion poll is its own file (see in preface_EN):
+% \include{opinion_poll}
 \EN{\include{appendix/appendix}}\RU{\include{appendix/appendix}}
 \include{acronyms}
 
@@ -363,5 +374,7 @@
 \clearpage
 \phantomsection
 \printindex
+
+%I think \include{reverse_engineering_services} would put in the file here - Ren
 
 \end{document}

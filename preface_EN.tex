@@ -1,3 +1,51 @@
+% Okay, I'd like to suggest completely restructuring the beginning:
+% Most books I see put the praise right after the cover, even before the info
+% you have in the page_after_cover.tex, which should be right before the
+% table of contents.
+
+% I'm debating whether the call_for_translators should be before or after the
+% table of contents, but I think it should be pretty visible and at the beginning.
+% That way, potential contributors already have the idea in their head when they start.
+
+% I would recommend taking the details about yourself from this files, adding some
+% more details about yourself, and making an 'About the Author' (if you want it to be more formal)
+% or an 'About Myself' (more informal). (Many place the 'About the Author'
+% after the whole book, but especially on technical works, many put them before.
+% Wiley (who did a bunch of Schneier's books) puts them at the beginning, for instance. Especially in pdf
+% format, I would recommmend the beginning.)
+
+% Continuing like this, I would put the
+% thanks.tex right after that (consider calling it Acknowledgments, by the way),
+% but I've also got some suggestions for that. I would make a subsection there
+% called 'About the Editions of Reverse Engineering for Beginners' which would
+% bring in the subsections from this file there about the Chinese, Korean and
+% Farsi.(I'll also point out that it is acceptable and common
+% to use first person ('I', 'me') in acknoledgments, which gives the thanks a
+% more personal feel.)
+
+% I would then put a page break, and put the FAQ.tex with some additions I'll
+% suggest there. This will more or less take out the need for any of the text in
+% this file, though you might want to still use it as the backbone of the intro
+
+% I would also recommend putting the tools and communities in the beginning,
+% not the end. Both are already useful at the beginning of the reader's journey.
+% Truth is, the afterword should probably be rolled into the call for translators
+% or made more unique, too.
+
+% 1st_page.tex has three parts: one where you offer your services for interperting
+% source code, a call for donations, and the opinion poll about the debuggers.
+% I think that it should probably be split into three parts.
+% The Reverse Engineering Services should be moved to the end, as sort of a last page,
+% probably even after the index, though make sure it's in the Table of Contents then,
+% and with a more identifiable name, like Reverse Engineering Services.
+% I think the opinion poll should also be in the end, though maybe before the
+% appendix. Beginners are unlikely to have an opinion, I think, while
+% those who have finished are more than entitled to an opinion.
+% The donations, on the other hand, should stay towards the beginning.
+
+% For this file, the above would mean cutting out everything unbtil where the
+% thanks and FAQ sections are put together - everything else will be covered
+% somewhere else (I've put it in comments in each file already)
 \section*{Preface}
 
 There are several popular meanings of the term \q{\gls{reverse engineering}}:
@@ -62,6 +110,13 @@ He can be contacted by email: \textbf{\EMAIL{}} or Skype: \textbf{dennis.yuriche
 \input{thanks}
 \input{FAQ_EN}
 
+% Here's the structure based off of the suggestions above:
+%\input{about_the_author}
+%\input{acknowledgments}
+%\input{FAQ_EN}
+
+
+% According to above suggestions, the following should be in thanks.tex
 \subsection*{About the Korean translation}
 
 In January 2015, the Acorn publishing company (\href{http://www.acornpub.co.kr}{www.acornpub.co.kr}) in South Korea did a huge amount of work in translating and publishing
