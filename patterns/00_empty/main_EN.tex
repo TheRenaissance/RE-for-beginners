@@ -9,7 +9,7 @@ Let's compile it!
 
 \subsection{x86}
 
-Here's what both the GCC and MSVC compilers produce (with optimization) on the x86 platform:
+Here's what both the GCC and MSVC compilers produce on the x86 platform:
 
 \lstinputlisting[caption=\Optimizing GCC/MSVC (\assemblyOutput),style=customasmx86]{patterns/00_empty/1.s}
 
@@ -54,8 +54,7 @@ as it is the convention followed by all the other \ac{ISA}s featured this book.
 
 \subsection{Empty Functions in Practice}
 
-% Consider switching 'are useless' to 'seem useless'
-Despite the fact empty functions are useless, they are quite frequent in low-level code.
+Despite the fact empty functions seem useless, they are quite frequent in low-level code.
 
 First of all, they are quite popular in debugging functions, like this one:
 
